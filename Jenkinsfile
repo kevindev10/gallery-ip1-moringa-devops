@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-        EMAIL_RECIPIENT    = 'your-email@example.com'           // Who should receive failure notifications
+        EMAIL_RECIPIENT    = 'comms.flexdevske@gmail.com'           // Who should receive failure notifications
         RENDER_DEPLOY_HOOK = 'https://your-render-webhook-url'  // Render deploy hook URL
         SLACK_TOKEN        = 'your-slack-credential-id'          // Jenkins credential ID for Slack
         WEBSITE_URL        = 'https://your-deployed-site.url'   // URL of the live site for notifications
@@ -16,7 +16,7 @@ pipeline {
         stage("Cloning repository") {
             steps {
                 // Clone a specific branch from your GitHub repository
-                git branch: "your-branch-name", url: "https://github.com/your-username/your-repo.git"
+                git branch: "master", url: "https://github.com/kevindev10/gallery-ip1-moringa-devops.git"
             }
         }
 
@@ -72,3 +72,8 @@ pipeline {
         }
     }
 }
+
+// This Jenkinsfile defines a CI/CD pipeline for a Node.js application.
+// It includes stages for cloning a repository, installing dependencies, running tests, and deploying to Render.
+// Notifications are sent via Slack and email based on the pipeline's success or failure.
+// Ensure that the necessary plugins (NodeJS, Slack Notification, Email Extension) are installed in
