@@ -1,6 +1,12 @@
 require('dotenv').config();
-const MONGO_USERNAME = process.env.DB_USERNAME;
-const MONGO_PASSWORD = process.env.DB_PASSWORD;
+const MONGO_USERNAME = process.env.MONGO_USERNAME;
+const MONGO_PASSWORD = process.env.MONGO_PASSWORD;
+
+
+
+console.log("process.env", process.env);
+console.log('MONGO_USERNAME', MONGO_USERNAME);
+console.log('MONGO_PASSWORD', MONGO_PASSWORD);
 
 var config = {}
 

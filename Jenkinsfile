@@ -2,7 +2,7 @@ pipeline {
     agent any  // Use any available Jenkins agent for execution
 
     tools {
-        nodejs "your-nodejs-tool-name"  // Must match the name configured in Jenkins > Global Tool Configuration
+        nodejs "nodejs"  // Must match the name configured in Jenkins > Global Tool Configuration
     }
 
     environment {
