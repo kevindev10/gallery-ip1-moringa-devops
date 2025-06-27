@@ -7,9 +7,9 @@ pipeline {
 
     environment {
         EMAIL_RECIPIENT    = 'comms.flexdevske@gmail.com'           // Who should receive failure notifications
-        RENDER_DEPLOY_HOOK = 'https://your-render-webhook-url'  // Render deploy hook URL
+        RENDER_DEPLOY_HOOK = 'https://api.render.com/deploy/srv-d1f4a7umcj7s739cjvgg?key=bdKrH6jxh3M'  // Render deploy hook URL
         SLACK_TOKEN        = 'your-slack-credential-id'          // Jenkins credential ID for Slack
-        WEBSITE_URL        = 'https://your-deployed-site.url'   // URL of the live site for notifications
+        WEBSITE_URL        = 'https://gallery-ip1-moringa-devops.onrender.com/'   // URL of the live site for notifications
     }
 
     stages {
