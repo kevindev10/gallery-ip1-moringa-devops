@@ -48,7 +48,7 @@ pipeline {
             echo 'Pipeline completed successfully!!'
             // Send Slack notification on success
             slackSend botUser: true, 
-                      channel: '#your-slack-channel', 
+                      channel: '#all-ip1', 
                       color: '#00ff00', 
                       message: "✅ Build #${currentBuild.number} successful! Visit: ${WEBSITE_URL}", 
                       tokenCredentialId: "${SLACK_TOKEN}"
